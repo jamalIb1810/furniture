@@ -1,0 +1,41 @@
+# Allow Google AdsBot full access
+User-agent: AdsBot-Google
+
+# Note: exclude Agents/spiders from scanning the following pages
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /cgi-bin/*
+Disallow: /cdn-cgi/
+Disallow: /cdn-cgi/*
+Disallow: /trade-room/
+Disallow: /trade-room/*
+Disallow: /ar/trade-room/
+Disallow: /ar/trade-room/*
+Disallow: /es/trade-room/
+Disallow: /es/trade-room/*
+Disallow: /css/
+Disallow: /css/*
+Disallow: /ar/css/
+Disallow: /ar/css/*
+Disallow: /es/css/
+Disallow: /es/css/*
+Disallow: /js/
+Disallow: /js/*
+Disallow: /ar/js/
+Disallow: /ar/js/*
+Disallow: /es/js/
+Disallow: /es/js/*
+Disallow: /_next/
+Disallow: /_next/*
+
+# Note: Allow Agents/GSC to scan the following XML List
+
+Sitemap: https://www.evest.com/sitemap_ar.xml
+Sitemap: https://www.evest.com/sitemap_en.xml
+Sitemap: https://www.evest.com/sitemap_es.xml
+Sitemap: https://www.evest.com/blog_ar.xml
+Sitemap: https://www.evest.com/blog_en.xml
+Sitemap: https://www.evest.com/blog_es.xml
+Sitemap: https://www.evest.com/news_ar.xml
+Sitemap: https://www.evest.com/news_en.xml
+Sitemap: https://www.evest.com/news_es.xml

@@ -1,0 +1,40 @@
+.upcomingSlider>.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal,
+.pressSlider>.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.grid-cols-1.innerSection {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2.innerSection {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3.innerSection {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.icon-container.innerSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adjust based on your theme */
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.futureTraders:lang(ar) {
+    line-height: 5rem !important;
+}
+
+.centeredImages:lang(es) {
+    display: grid !important;
+    justify-content: center !important;
+}

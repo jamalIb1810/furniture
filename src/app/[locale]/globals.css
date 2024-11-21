@@ -1,0 +1,690 @@
+@tailwind base;
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: var(--primary);
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 2rem;
+  }
+
+  b:lang(en),
+  strong:lang(en) {
+    font-family: "Evest Bold";
+  }
+
+  b:lang(ar),
+  strong:lang(ar) {
+    font-family: "Evest-Arabic-Bold";
+    font-weight: 800;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+/* @tailwind variants; */
+
+@font-face {
+  font-family: "Evest";
+  src: url("../../../public/Fonts/EN/Gotham-Book.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Evest Medium";
+  src: url("../../../public/Fonts/EN/Gotham-Medium.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Evest Bold";
+  src: url("../../../public/Fonts/EN/Gotham-Bold.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Evest Thin";
+  src: url("../../../public/Fonts/EN/Gotham-Thin.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Evest-Arabic";
+  src: url("../../../public/Fonts/AR/GE-SS-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Evest-Arabic-Medium";
+  src: url("../../../public/Fonts/AR/GE-SS-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Evest-Arabic-Bold";
+  src: url("../../../public/Fonts/AR/GE-SS-Bold.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Evest_Arabic_light";
+  src: url("../../../public/Fonts/AR/GE-SS-light.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Evest_Arabic_EN_Numbers";
+  src: url("../../../public/Fonts/AR/EvestMedium.ttf");
+  font-display: swap;
+}
+
+:root {
+  --primary: #058080;
+  --secondary: #cde6e6;
+  --accent: #37cdbe;
+  --neutral: #3d4451;
+  --base-100: #ffffff;
+  --evest: #022a3a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.notArabic {
+  font-family: "Evest" !important;
+}
+
+@media (max-width : 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+body:lang(ar),
+.Arabic {
+  font-family: "Evest-Arabic" !important;
+}
+
+.font-evest {
+  font-family: 'Evest';
+}
+
+.text-bold:lang(en),
+.text-boldf:lang(en):focus {
+  font-family: "Evest Bold";
+}
+
+.text-bold:lang(es),
+.text-boldf:lang(es):focus {
+  font-family: "Evest Bold";
+}
+
+.text-bold:lang(ar),
+.text-boldf:lang(ar):focus {
+  font-family: "Evest-Arabic-Bold";
+}
+
+.text-bold-hover:lang(en):hover {
+  font-weight: bold;
+}
+
+.text-bold-hover:lang(ar):hover {
+  font-family: "Evest-Arabic-Bold";
+  font-weight: 800;
+}
+
+.text-bold-hover.Arabic:lang(ar):hover {
+  font-family: "Evest-Arabic-Bold";
+  font-weight: 800;
+}
+
+.text-light:lang(ar),
+.text-thin:lang(ar) {
+  font-family: "Evest_Arabic_light";
+}
+
+.text-light:lang(en) {
+  font-family: "Evest";
+}
+
+.text-medium:lang(en) {
+  font-family: "Evest Medium";
+}
+
+.text-medium:lang(ar) {
+  font-family: "Evest-Arabic-Medium";
+}
+
+.text-thin:lang(en),
+.text-thin:lang(es) {
+  font-family: "Evest Thin";
+  font-weight: 600;
+}
+
+.text-english {
+  font-family: "Evest" !important;
+}
+
+.text-english-bold {
+  font-family: "Evest Bold" !important;
+}
+
+.arabicEnglishNumbersText:lang(ar) {
+  font-family: 'Evest_Arabic_EN_Numbers' !important;
+}
+
+/* Global css for responsive */
+
+.title {
+  font-size: 16px;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.subText {
+  font-size: 12px;
+}
+
+.button {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.main-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.arabic-thin:lang(ar) {
+  font-family: 'Evest_Arabic_light';
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+  .title {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .subText {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .main-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+
+  .title {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .subText {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .main-content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
+
+@media (min-width: 1600px) and (max-width: 1700px) {
+
+  .title {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .subText {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+
+  .main-content {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+
+}
+
+@media (min-width: 1701px) and (max-width: 1920px) {
+
+  .title {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .subText {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 20px;
+    padding: 14px 28px;
+  }
+
+  .main-content {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2047px) {
+
+  .title {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .subText {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+
+  .main-content {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+}
+
+@media (min-width: 2048px) and (max-width: 2559px) {
+
+  .title {
+    font-size: 45px;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .subText {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 30px;
+    padding: 0px 32px;
+    height: 70px;
+  }
+
+  .main-content {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+}
+
+@media (min-width: 2560px) {
+
+  .title {
+    font-size: 45px;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .subText {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 30px;
+    padding: 0px 32px;
+    height: 70px;
+  }
+
+  .main-content {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+}
+
+/* Btns Styles */
+
+.btn {
+  text-transform: none !important;
+}
+
+.btn-primary {
+  color: #FFF;
+}
+
+.btn-filled {
+  background-color: var(--primary);
+  color: #FFF;
+}
+
+/* from here down need to clean */
+.carousel-wrapper {
+  transition: transform 0.3s ease;
+  width: -webkit-fill-available;
+}
+
+.MainSec6Slider {
+  width: -webkit-fill-available;
+}
+
+.prevEvent {
+  width: -webkit-fill-available;
+}
+
+#playList::-webkit-scrollbar {
+  width: 3px;
+}
+
+#playList::-webkit-scrollbar-track {
+  background-color: #F1F1F1;
+}
+
+#playList::-webkit-scrollbar-thumb {
+  background-color: #022A3A;
+}
+
+.collapse-title,
+:where(.collapse > input[type="checkbox"]),
+:where(.collapse > input[type="radio"]) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.collapse-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.modal[open] {
+  height: auto !important;
+}
+
+.basic-protect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.months .splide__arrow--prev {
+  width: 10px !important;
+}
+
+.months .splide__arrow--next {
+  width: 10px !important;
+}
+
+.months .splide {
+  padding: 30px !important;
+}
+
+.menu :where(li > details > summary):after,
+.menu :where(li > .menu-dropdown-toggle):after {
+  transform: rotate(312deg);
+}
+
+.menu :where(li > details[open] > summary):after,
+.menu :where(li > .menu-dropdown-toggle.menu-dropdown-show):after {
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+.dropdown-menu-center {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
+}
+
+.flip:lang(ar) {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.is-next img {
+  display: none;
+}
+
+.section1 .swiper-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.flipEn:lang(en) {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.flipEn:lang(es) {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.react-tel-input {
+  z-index: 99;
+}
+
+.react-tel-input .form-control {
+  flex-shrink: 1 !important;
+  height: 3rem !important;
+  padding-right: 1rem !important;
+  font-size: 1rem !important;
+  line-height: 2 !important;
+  line-height: 1.5rem !important;
+  border-width: 1px !important;
+  border-color: hsl(var(--bc) / var(--tw-border-opacity)) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: hsl(var(--b1) / var(--tw-bg-opacity)) !important;
+  border-radius: var(--rounded-btn, 0.5rem) !important;
+  --tw-border-opacity: 0.2 !important;
+}
+
+.country-list:lang(ar) {
+  direction: ltr;
+}
+
+.react-tel-input .flag-dropdown:lang(ar) {
+  left: -1px;
+}
+
+.react-tel-input .selected-flag:lang(ar) {
+  padding: 0px !important;
+}
+
+.react-tel-input .selected-flag .arrow:lang(ar) {
+  left: 10px !important;
+}
+
+.react-tel-input .selected-flag .flag:lang(ar) {
+  right: 15px;
+}
+
+.react-tel-input .country-list {
+  left: 0px !important;
+}
+
+.contactPhone>.form-control {
+  width: 100% !important;
+}
+
+@media only screen and (min-width: 640px) {
+  .react-tel-input .form-control {
+    width: 400px !important;
+  }
+}
+
+.element0::after {
+  transition: all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0s;
+}
+
+.element1::after {
+  transition: all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s;
+}
+
+.element2::after {
+  transition: all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s;
+}
+
+.element3::after {
+  transition: all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.9s;
+}
+
+.inView0::after,
+.inView1::after,
+.inView2::after,
+.inView3::after {
+  opacity: 1;
+}
+
+.element0:not(.inView0)::after,
+.element1:not(.inView1)::after,
+.element2:not(.inView2)::after,
+.element3:not(.inView3)::after {
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+.metaTrader .steps .step:after {
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 1023px) {
+  .steps-vertical .step:before {
+    width: 0.2rem !important;
+    height: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 1023.1px) {
+  .steps-vertical .step:before {
+    height: 0.2rem !important;
+    width: 100% !important;
+  }
+
+  [dir="rtl"] .steps-vertical .step:before {
+    margin-right: 0;
+    margin-left: 100% !important;
+  }
+}
+
+.scroll {
+  margin: 4px, 4px;
+  padding: 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.bw-scroll {
+  margin: 4px, 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.news-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.is-active {
+  display: flex;
+  justify-content: center;
+}
+
+.tab.tab-active:not(.tab-disabled):not([disabled]) {
+  border-color: var(--primary);
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 0 !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 0 !important;
+}
+
+body>main>div.swiper.swiper-initialized.swiper-horizontal.swiper-ios.swiper-backface-hidden.upcomingSlider.min-\[1280px\]\:\!hidden.false>div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none !important;
+}
+
+.FlipImage:lang(ar) {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.react-multiple-carousel__arrow {
+  z-index: 997 !important;
+}
